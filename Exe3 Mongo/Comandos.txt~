@@ -1,0 +1,34 @@
+1 - Criar Banco
+use agenda
+
+
+2 - Inserir
+	var contato = [{ "nome" : "Contato1", "telefone" : "Telefone1" },{ "nome" : "Contato2", "telefone" : "Telefone2" },{ "nome" : "Contato3", "telefone" : "Telefone3" },{ "nome" : "Contato4", "telefone" : "Telefone4" },{ "nome" : "Contato5", "telefone" : "Telefone5" }]
+
+
+db.contatos.insert(contato)
+
+
+
+3 - Buscar 
+	varr busca = { "nome" : "Contato 2" }
+
+	db.contatos.find(busca)
+
+
+
+4 - Alterar 
+	var altera = { "nome" : "Contato 3" }
+
+var contato = { "nome" : "Contato 10", "telefone" : "Telefone 10" }
+
+
+
+db.contatos.update(altera, contato)
+
+
+
+
+5 - Remover
+
+db.contatos.remove({ "nome" : "Contato 5" })

@@ -1,0 +1,25 @@
+Get: Requisita uma representação de recuros especidifado
+podendo ter varisa representalções como exemplo
+xml, json.
+
+Head: Retorna os cabelçalhos de uma resposta
+Sem corpo
+
+Post: envia uma entidade e requisita que o servidor 
+aceite como subordinada do recurso identificado pela URI
+
+Put: Requisita que um entidade seja armazenada
+embaixo da URI fornecida
+
+Delete: apaga  o recurso especificado
+
+Trace: Acoa de volta a requisição recebida para que o cliente
+veja se houveram mudanças e adições feitas por servidores intermediarios
+
+Options: retorna os metodos HTTP que o servidor suporta para URL especificada
+
+Connect: Converte a requisição de conexão para um túnel TCP/IP
+transparente, usualmente para facilitar comunicação
+criptografada.
+
+Patch: usado para aplicar modificações parciais a um recurso

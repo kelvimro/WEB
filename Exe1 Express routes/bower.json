@@ -1,0 +1,28 @@
+{
+  "name": "projetos",
+  "description": "Projeto Express exe1",
+  "main": "server.js",
+  "authors": [
+    "Kelvim"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "node",
+    "webII",
+    "ufms"
+  ],
+  "homepage": "https://github.com/kelvimro",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.7",
+    "bootstrap": "^3.3.6",
+    "font-awesome": "fontawesome#^4.6.3",
+    "angular-route": "^1.5.7"
+  }
+}

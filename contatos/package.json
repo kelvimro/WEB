@@ -1,0 +1,36 @@
+{
+  "name": "projetos",
+  "version": "1.0.0",
+  "description": "Projeto para aula de webII",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "bower install",
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "node",
+    "webII",
+    "ufms"
+  ],
+  "author": "Jose Alves",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "express-load": "^1.1.15",
+    "method-override": "^2.3.6",
+    "mongoose": "^4.6.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.15.0",
+    "gulp": "^3.9.1",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-jshint": "^2.0.1",
+    "gulp-nodemon": "^2.1.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-usemin": "^0.3.24",
+    "jshint": "^2.9.3"
+  }
+}

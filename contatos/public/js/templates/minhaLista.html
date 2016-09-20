@@ -1,0 +1,32 @@
+ <div>
+     
+ </div>
+
+
+ 
+ <table class="table table-striped" ng-controller="lojaController">
+            <thead>
+                <tr>
+                    <td>
+                        <h1 class="fa fa-user"></h1>
+                        <a ng-click="sort('nome')">Nome</a>
+                    </td>
+                    <td>
+                        <h1 class="fa fa-envelope"></h1>
+                        <a ng-click="sort('preco')">Preço</a></td>
+                    <td>
+                        <h1 class="fa fa-phone"></h1>
+                        <a ng-click="sort('obs')">Telefone</a></td>
+                </tr>
+            </thead>
+
+            <tbody class="table-striped">
+                <tr ng-repeat="item in elementos | 
+                     orderBy:sortValue:order
+                     | filter: filtro">
+                    <td>{{item.nome}}</td>
+                    <td>{{item.preco}}</td>
+                    <td>{{item.obs}}</td>
+                </tr>
+            </tbody>
+        </table>

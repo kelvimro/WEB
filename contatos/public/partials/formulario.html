@@ -1,0 +1,41 @@
+<section class="container ">
+    <meu-painel titulo="Lista de Itens"></meu-painel>
+<span class="form-control alert-info"
+                    ng-show = "formulario.$submitted"> {{mensagem}} </span>
+    <div class="row">
+
+        <form novalidate name="formulario" class="row" ng-submit="submeter()">
+            <div class="row">
+                <div class="form-group">
+                    <label>Nome</label>
+                    <input type="text" name="nome" 
+                    ng-model="item.nome" class="form-control" required>
+                    <span class="form-control alert-danger"
+                    ng-show = "formulario.$submitted && formulario.nome.$error.required"> Nome obrigatório </span>
+                </div>
+
+                <div class="form-group">
+                    <label>Preço</label>
+                    <input type="price" name="preco" 
+                    ng-model="item.preco" class="form-control" required>
+                    <span class="form-control alert-danger"
+                    ng-show = "formulario.$submitted && formulario.preco.$error.required"> Preço obrigatório </span>
+                </div>
+
+                <div class="form-group">
+                    <label>Observação</label>
+                    <input type="obs" name="obs"
+                     ng-model="item.obs" class="form-control" required>
+                     <span class="form-control alert-danger"
+                     ng-show = "formulario.$submitted && formulario.obs.$error.required"> Obs obrigatório </span>
+                </div>
+
+                <button type="submit" class="btn btn-primary" 
+                ng-disabled="formulario.$invalid">Salvar</button>
+
+                <a href="#" class="btn btn-primary">Voltar</a>
+                <hr>
+            </div>
+        </form>
+    </div>
+    </section>

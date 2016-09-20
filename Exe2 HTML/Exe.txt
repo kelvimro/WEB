@@ -1,0 +1,17 @@
+Requisições Get, solicita recuros especidifado, solicitando dados em varios padrões como js, xml, json, php entre outras.
+
+Requisições Head, retorna apenas o cabelçalhos de uma resposta.
+
+Requisições Post, é a requisição a qual tem a função de enviar uma entidade e tábme de requisitar que o servidor aceite como seu subordinado do recurso identificado pela URI.
+
+Resuisições Put, solicita o armazenamento de uma entidade
+
+Requisições Delete, solicita para que o recurso especificado seja apagado.
+
+Resuisições Trace, "resposta" de  uma requisição recebida para que o cliente veja se houveram ou não mudanças ou adições feitas pelos servidores intermediarios
+
+Resuisições Options, retorna os metodos HTTP a qual o servidor suporta para URL especificada
+
+Requisições Connect, converte a requisição de conexão, para um socket TCP/IP transparente, utilizado geralmente para facilitar troca de dados criptografada.
+
+Requisições Patch, tem a função de aplicar modificações parciais a um recurso.

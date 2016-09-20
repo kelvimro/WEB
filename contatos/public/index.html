@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Loja Kelvão</title>
+    <meta charset="UTF-8">
+    <!-- build:css css/index.min.css -->
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css"></link>
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap-theme.min.css"></link>
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css"></link>
+    <!-- endbuild -->
+</head>
+
+<body ng-app="itens">
+    
+    <ng-view></ng-view>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+    <!-- build:js js/main.min.js -->
+    <script src="js/main.js"></script>
+    <script src="js/controllers/lojaController.js"></script>
+    <script src="js/controllers/itemController.js"></script>
+
+    <script src="js/routes/routes.js"></script>
+    <script src="js/directives/loja-diretivas.js"></script>
+    <!-- endbuild -->
+
+</body>
+</html>

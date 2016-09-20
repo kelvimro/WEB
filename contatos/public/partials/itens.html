@@ -1,0 +1,75 @@
+<section class="container">
+
+    <meu-painel titulo="Listaaaa de Itens">
+
+    </meu-painel>
+
+
+    <div class="input-group">
+        <span class="input-group-btn">
+                    <a href="#/itens/new" class="btn btn-primary" 
+                    type="button">
+                        Novo Item
+                    </a>
+                </span>
+        <input class="form-control" ng-model="filtro">
+    </div>
+
+</br>
+
+    <div class="row">
+        <div class="col-md-4" ng-repeat="item in itens | 
+                     orderBy:sortValue:order
+                     | filter: filtro">
+            <div class="thumbnail">
+                <div class="caption">
+                    <h1>Produto {{item.nome}}</h1>
+                    <h3>Valor {{item.preco}}</h3>
+                    <p>Obs: {{item.obs}}</p>
+                    <p>
+                        <a href="#" class="btn btn-danger" role="button" ng-click="del(item._id)">Delete</a>
+                        <a href="#" class="btn btn-default" role="button">Update</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <td>
+                        <h1 class="fa fa-user"></h1>
+                        <a ng-click="sort('nome')">Nome</a>
+                    </td>
+                    <td>
+                        <h1 class="fa fa-envelope"></h1>
+                        <a ng-click="sort('preco')">Preço</a></td>
+                    <td>
+                        <h1 class="fa fa-phone"></h1>
+                        <a ng-click="sort('obs')">Obeservações</a></td>
+                    <td>
+
+                    </td>
+                </tr>
+            </thead>
+
+            <tbody class="table-striped">
+                <tr ng-repeat="item in itens | 
+                     orderBy:sortValue:order
+                     | filter: filtro">
+                    <td>{{item.nome}}</td>
+                    <td>{{item.preco}}</td>
+                    <td>{{item.obs}}</td>
+                    <td>
+                        <button class="btn btn-danger" ng-click="del(item._id)">Del</button>
+                        <a class="btn btn-success" href="#/itens/{{itens._id}}">Update</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</section>
